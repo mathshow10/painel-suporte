@@ -115,3 +115,8 @@ Arquivos criados ao usar (não vão para o repositório, estão no `.gitignore`)
 Projeto pessoal, em evolução. Desenvolvido e testado no **Windows 11**; no Windows 10 as caixinhas ficam com cantos
 retos. Este repositório mostra o funcionamento com conteúdo fictício e **não inclui** nenhuma integração com sistemas
 de tickets reais.
+
+## Aviso
+
+Este código é apenas de **demonstração** e **não contém dados reais**: as respostas e os tickets são fictícios.
+Todos os direitos reservados a **Matheus Lencione**. Não é permitido copiar, modificar ou redistribuir sem autorização.
