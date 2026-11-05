@@ -1,0 +1,19 @@
+# Dados do usuário (podem conter dados de pessoas e a chave da API)
+config_painel.json
+usos_painel.json
+respostas_custom_painel.json
+casos_aprendidos_painel.json
+buscas_sem_resultado.csv
+erro_painel.log
+wiki_jogo_cache.json
+tickets_coletados.json
+lista_atalhos.html
+
+# Python
+__pycache__/
+*.pyc
+*.tmp
+
+# Sistema
+Thumbs.db
+.DS_Store
