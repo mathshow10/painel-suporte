@@ -1528,8 +1528,7 @@ sao foram sera seria existe conseguindo conseguir tentei tentando tentar acabei 
 2026 2025 solicitacao verificar verifiquei""".split())
 
 
-_SINONIMOS_CASO = {"lives": "live", "streamer": "live", "stream": "live", "streaming": "live", "transmitir": "live",
-                   "transmissao": "live", "bp": "pass", "passe": "pass", "hackeado": "hacked", "hackearam": "hacked",
+_SINONIMOS_CASO = {"bp": "pass", "passe": "pass", "hackeado": "hacked", "hackearam": "hacked",
                    "roubaram": "hacked", "invadiram": "hacked", "invadida": "hacked", "estorno": "reembolso",
                    "devolucao": "reembolso", "ressarcimento": "reembolso", "ressarcir": "reembolso"}
 
@@ -1550,7 +1549,7 @@ def termos_chave_de(texto: str) -> frozenset:
 
 
 def _tokens_caso(texto: str) -> List[str]:
-    """Palavras que importam para comparar casos (sem saudações, plural simplificado: charms = charm; sinônimos)."""
+    """Palavras que importam para comparar casos (sem saudações, plural simplificado; sinônimos)."""
     saida = []
     for w in re.findall(r"[a-z0-9]{2,}", remover_acentos(texto)):
         w = _SINONIMOS_CASO.get(w, w)
@@ -1638,7 +1637,7 @@ def buscar_casos(mensagem: str, quantos: int = 3, minimo: float = 0.15) -> List[
     achados: List[Tuple[float, Dict[str, Any]]] = []
     for c in casos:
         comuns = [t for t in palavras if t in c["tf"]]
-        kw = kw_q & c["kw"]                                    # mesmo assunto-chave (Live Store, Charm, Task...)
+        kw = kw_q & c["kw"]                                    # mesmo assunto-chave (loja, passe, evento...)
         kwr = kw_q & c["kwr"]
         if not comuns and not kw:
             continue
@@ -3279,7 +3278,7 @@ class Aplicacao:
             e.pack(fill=tk.X, ipady=4, pady=(2, 8))
             return e
 
-        rotulo("Atalho (só letras e números, ex: bossloot):")
+        rotulo("Atalho (só letras e números, ex: pagamento):")
         e_at = entrada(at0)
         lbl_at = tk.Label(m, text="", bg=BG_MAIN, fg=FG_MUTED, anchor="w", font=("Segoe UI", 9))
         lbl_at.pack(fill=tk.X, pady=(0, 6))
