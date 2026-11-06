@@ -1,4 +1,6 @@
 # Dados do usuário (podem conter dados de pessoas e a chave da API)
+dados/
+relatorios/
 config_painel.json
 usos_painel.json
 respostas_custom_painel.json
