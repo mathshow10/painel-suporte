@@ -6,7 +6,7 @@
 =============================================================================
 
 COMO USAR (Windows)
-  1. Dê dois cliques em  iniciar_suporte.vbs  (abre sem a janela preta).
+  1. Dê dois cliques em  iniciar_painel.vbs  (abre sem a janela preta).
   2. Minimize ou feche (X): ele continua rodando na bandeja, ao lado do relógio.
      Clique no ícone para reabrir; botão direito > Sair para encerrar.
   3. Em QUALQUER caixa de texto (ticket no navegador, chat...) digite ; e o

@@ -146,6 +146,15 @@ Pastas criadas ao usar (não vão para o repositório, estão no `.gitignore`): 
 `usos_painel.json`, `respostas_custom_painel.json`, `casos_aprendidos_painel.json`, `erro_painel.log`) e
 `relatorios/` (`buscas_sem_resultado.csv`, `lista_atalhos.html`).
 
+## Testes
+
+As funções que não dependem do Windows (busca de respostas, anonimização, conversão para HTML, leitura do ticket, reporte de bug) têm testes automáticos, rodados no GitHub Actions a cada push:
+
+```bash
+pip install pytest
+python -m pytest -q
+```
+
 ## Estado do projeto
 
 Projeto pessoal, em evolução. Desenvolvido e testado no **Windows 11**; no Windows 10 as caixinhas ficam com cantos

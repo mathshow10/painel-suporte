@@ -19,3 +19,4 @@ __pycache__/
 # Sistema
 Thumbs.db
 .DS_Store
+.pytest_cache/
